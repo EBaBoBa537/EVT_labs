@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("fonts/Nunito-Regular.ttf");
+}
+@font-face {
+    font-family: "Cascadia code";
+    src: url("fonts/CascadiaCode-Bold.otf");
+}
+@font-face {
+    font-family: "Pocherk";
+    src: url("fonts/MY_POCHERK_1.ttf");
+}
+
+
+body {
+    margin: 0px;
+    background-color: #2b372b;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.cadrs {
+    height: 250px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.cadrs img {
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+article {
+    max-width: 1440px;
+    background-color: #2b372b;
+}
+
+h1 {
+    margin: 0px;
+}
+
+#film_1 { font-family: 'Nunito', serif; }
+#film_2 { font-family: 'Cascadia code', serif; }
+#film_3 { font-family: 'Pocherk', serif; }
+
+li {
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+#film_1 p {
+    text-align: left;
+}
+#film_2 p {
+    text-align: center;
+}
+#film_3 p {
+    text-align: right;
+}
+
+.bold_text {
+    font-weight: bold;
+}
