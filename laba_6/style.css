@@ -1,0 +1,225 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+button {
+    margin: 50px;
+    font-size: 20px;
+    background-color: red;
+    animation-name: button_vibration;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+button:hover {
+  animation-name: none;
+  margin: 50px;
+  background-color: rgb(78, 188, 78);
+}
+
+@keyframes button_vibration {
+  from {
+    margin-left: 51px;
+    margin-right: 49px;
+  }
+
+  to {
+    margin-left: 49px;
+    margin-right: 51px;
+  }
+}
+
+a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+  color: rgb(78, 188, 78);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: black;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  background: rgb(78, 188, 78);
+}
+
+#falling_ball {
+   display: inline-block;
+   width: 114px;
+   height: 210px;
+   border: 2px solid black;
+   position: relative;
+   margin: 20px 50px 0px 50px;
+}
+
+#platform {
+  position: absolute;
+  width: 100px;
+  height: 15px;
+  background-color: #816949;
+  border: 2px solid black;
+  left: 5px;
+  bottom: 5px;
+}
+
+
+#ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: radial-gradient(#6ba877, #2b8e3b);
+  border: 2px solid black;
+  left: 35px;
+  bottom: 160px; /* Начальная позиция выше платформы */
+  animation: bounce 2s;
+  animation-fill-mode: forwards;
+}
+
+
+/* Анимация отскоков */
+@keyframes bounce {
+  0% {
+    bottom: 160px; /* Начальная высота */
+    animation-timing-function: ease-in;
+  }
+  18% {
+    bottom: 23px;
+    animation-timing-function: ease-out;
+  }
+  38% {
+    bottom: 120px; /* Первый отскок */
+    animation-timing-function: ease-in;
+  }
+  60% {
+    bottom: 23px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 80px; /* Второй отскок */
+    animation-timing-function: ease-in;
+  }
+  86% {
+    bottom: 23px;
+    animation-timing-function: ease-out;
+  }
+  92% {
+    bottom: 40px; /* Третий отскок */
+    animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 23px;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+
+
+
+#Newton_kolybel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 210px;
+  border: 2px solid black;
+  position: relative;
+  margin: 20px 50px 0px 0px;
+}
+
+.Newton {
+  width: 42px;
+  height: 148px;
+  background-image: url("Newton.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  transform-origin: center top;
+  animation: Newton 0.8s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+#Newton_1 { left: 120px; }
+#Newton_2 { left: 162px; }
+#Newton_3 { left: 204px; }
+#Newton_4 { left: 246px; }
+#Newton_5 { left: 288px; }
+#Newton_6 { 
+  left: 330px; 
+  transform: rotate(-30deg); 
+  animation: 
+  Newton_start_first 0.4s ease-in forwards 0s, /* Первое движение */
+  Newton 0.8s ease-in-out infinite 0.4s; /* Основное качание с задержкой */
+}
+
+
+@keyframes Newton {
+  0% { 
+    transform: rotate(0deg); 
+    animation-timing-function: ease-out;
+  }
+  25% {
+    transform: rotate(30deg); 
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(0deg); 
+    animation-timing-function: ease-out;
+  }
+  75% { 
+    transform: rotate(-30deg); 
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: rotate(0deg); 
+    animation-timing-function: ease-out;
+  }
+}
+
+
+@keyframes Newton_start_first {
+  0% { 
+    transform: rotate(-30deg); 
+  }
+  100% { 
+    transform: rotate(0deg); 
+  }
+}
+
+article {
+  display: flex;
+  align-items: last baseline;
+  justify-content: space-around;
+}
