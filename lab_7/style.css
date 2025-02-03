@@ -1,0 +1,123 @@
+html {
+    font-family: sans-serif;
+  }
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(16, 233, 215, 0.178);
+}
+
+#articles_1_2_3,
+#articles_4_5_6_7_8_9_10,
+#articles_4_5_6,
+#articles_7_8_9_10,
+#articles_7_8,
+#articles_9_10 {
+  display: flex;
+}
+
+#articles_7_8_9_10 {
+  order: -1;
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+#articles_4_5_6 {
+  flex-direction: column-reverse;
+  flex: 1;
+}
+
+#articles_7_8,
+#articles_9_10 {
+  align-content: stretch;
+}
+
+#articles_4_5_6_7_8_9_10 {
+  align-items: stretch;
+}
+
+
+
+/* Дополнительное задание */
+
+
+.radiobuttons { 
+  display: inline-flex; 
+}
+.radiobuttons input[type='radio'] {
+	display: none;
+}
+.radiobuttons label {
+	display: inline-block;
+	cursor: pointer;
+  padding: 2px 6px 2px 6px;
+	font-size: 14px;
+	line-height: 16px;
+	user-select: none;
+  border: 2px solid #323232;
+  margin-right: 10px;
+}
+.radiobuttons input[type='radio']:checked + label {
+	background-color: #cbcbcb;
+}
+
+.radiobuttons label:hover {
+  background-color: #ecf2ec;
+}
+
+.radiobuttons label:active {
+  background-color: #dbe4db;
+}
+
+
+/* #parent_1, #parent_2, #parent_3, #parent_4 {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #000000;
+  background-color: #e6f4cf;
+  display: flex;
+} */
+.child {
+  border: 2px solid #000000;
+  /* background-color: #ecf3da; */
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5px;
+}
+#parent_4 .child {
+  width: 40%;
+}
+
+.one { background-color: #ffd8d8; }
+.two { background-color: #e4ffe4; }
+.three { background-color: #ebf8ff; }
+.four { background-color: #fffdeb; }
+
+
+.extra-header,section {
+  margin-left: 30px;
+}
+
+section h2 {
+  margin-top: 45px;
+}

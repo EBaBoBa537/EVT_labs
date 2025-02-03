@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex</title>
+</head>
+<body>
+    <header>
+        <h1>Изучаем flexbox</h1>
+    </header>
+
+    <div id="articles_1_2_3">
+        <article>
+            <h2>1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+            </p>
+        </article>
+        <article>
+            <h2>2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+            </p>
+        </article>
+        <article>
+            <h2>3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+            </p>
+        </article>
+    </div>
+
+    <div id="articles_4_5_6_7_8_9_10">
+        <div id="articles_4_5_6">
+            <article>
+                <h2>4</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+            <article>
+                <h2>5</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+            <article>
+                <h2>6</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+        </div>
+
+        <div id="articles_7_8_9_10">
+            <div id="articles_7_8">
+                <article>
+                    <h2>7</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+                <article>
+                    <h2>8</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                    </p>
+                </article>
+            </div>
+
+            <div id="articles_9_10">
+            <article>
+                <h2>9</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+            <article>
+                <h2>10</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis quo praesentium harum quibusdam nostrum aliquam voluptates ullam aliquid, dolor consectetur expedita, nisi mollitia reiciendis deleniti sit natus quos est.
+                </p>
+            </article>
+            </div>
+        </div>   
+    </div>
+
+
+    <h2 class="extra-header">Дополнительное задание</h2>
+
+    <section>
+        <h2>flex-direction</h2>
+        <div class="radiobuttons">
+            <div class="radiobutton">
+                <input id="radiobutt-1" type="radio" name="radiobuttons_1" checked>
+                <label for="radiobutt-1">row</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-2" type="radio" name="radiobuttons_1">
+                <label for="radiobutt-2">row-reverse</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-3" type="radio" name="radiobuttons_1">
+                <label for="radiobutt-3">column</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-4" type="radio" name="radiobuttons_1">
+                <label for="radiobutt-4">column-reverse</label>
+            </div>
+        </div>
+        <div id="parent_1">
+            <div class="child one">1</div>
+            <div class="child two">2</div>
+            <div class="child three">3</div>
+            <div class="child four">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>justify-content</h2>
+        <div class="radiobuttons">
+            <div class="radiobutton">
+                <input id="radiobutt-5" type="radio" name="radiobuttons_2" checked>
+                <label for="radiobutt-5">flex-start</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-6" type="radio" name="radiobuttons_2">
+                <label for="radiobutt-6">flex-end</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-7" type="radio" name="radiobuttons_2">
+                <label for="radiobutt-7">center</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-8" type="radio" name="radiobuttons_2">
+                <label for="radiobutt-8">space-between</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-9" type="radio" name="radiobuttons_2">
+                <label for="radiobutt-9">space-around</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-10" type="radio" name="radiobuttons_2">
+                <label for="radiobutt-10">space-evenly</label>
+            </div>
+        </div>
+        <div id="parent_2">
+            <div class="child one">1</div>
+            <div class="child two">2</div>
+            <div class="child three">3</div>
+            <div class="child four">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>align-items</h2>
+        <div class="radiobuttons">
+            <div class="radiobutton">
+                <input id="radiobutt-11" type="radio" name="radiobuttons_3" checked>
+                <label for="radiobutt-11">flex-start</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-12" type="radio" name="radiobuttons_3">
+                <label for="radiobutt-12">flex-end</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-13" type="radio" name="radiobuttons_3">
+                <label for="radiobutt-13">center</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-14" type="radio" name="radiobuttons_3">
+                <label for="radiobutt-14">baseline</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-15" type="radio" name="radiobuttons_3">
+                <label for="radiobutt-15">stretch</label>
+            </div>
+        </div>
+        <div id="parent_3">
+            <div class="child one">1</div>
+            <div class="child two">2</div>
+            <div class="child three">3</div>
+            <div class="child four">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>flex-wrap</h2>
+        <div class="radiobuttons">
+            <div class="radiobutton">
+                <input id="radiobutt-16" type="radio" name="radiobuttons_4" checked>
+                <label for="radiobutt-16">nowrap</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-17" type="radio" name="radiobuttons_4">
+                <label for="radiobutt-17">wrap</label>
+            </div>
+            <div class="radiobutton">
+                <input id="radiobutt-18" type="radio" name="radiobuttons_4">
+                <label for="radiobutt-18">wrap-reverse</label>
+            </div>
+        </div>
+        <div id="parent_4">
+            <div class="child one">1</div>
+            <div class="child two">2</div>
+            <div class="child three">3</div>
+            <div class="child four">4</div>
+        </div>
+    </section>
+
+    <br> <br> <br> <br>
+      
+    <script src="extra.js"></script>
+</body>
+</html>
