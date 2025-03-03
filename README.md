@@ -2,4 +2,4 @@
 '
 # CV: Лойко Алеся Игоревна
 
-<img src='https://github.com/EBaBoBa537/EVT_labs/blob/3845f4b0b5c4b8be96a08df2b7a5014378dae0f7/lab_10/me.jpg' width=400>
+<img src='lab_10/me.jpg' width=250>
