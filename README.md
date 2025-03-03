@@ -2,4 +2,4 @@
 '
 # CV: Лойко Алеся Игоревна
 
-<img src='lab_10/me.jpg' width=250>
+<img src='lab_10/foto.jpg' width=250>
