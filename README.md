@@ -2,7 +2,7 @@
 
 # CV: Лойко Алеся Игоревна
 
-<div style='display: flex; justify-content: left; gap: 10px;'>
+<div style='display: flex; flex-direction: row; justify-content: left; gap: 10px;'>
 <img src='lab_10/foto.jpg' style='width: 200px'>
 <div>
   <span>Лойко Алеся Игоревна</span>
