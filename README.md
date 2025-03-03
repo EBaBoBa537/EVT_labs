@@ -1,20 +1,22 @@
-![image](https://github.com/user-attachments/assets/5ce753bf-a99f-4dfd-b580-ccb56adb21e3)![image](https://github.com/user-attachments/assets/5bfed608-d01b-4b77-b8ea-216fdaeeb101)![image](https://github.com/user-attachments/assets/e0dfe430-928d-4830-8ec2-3076ac7ef2bd)# EVT_labs Лойко Алеся Игоревна, 210901, https://ebaboba537.github.io/EVT_labs/
+![image](https://github.com/user-attachments/assets/a7517f84-2701-4769-a9a2-86c5c756aef1)![image](https://github.com/user-attachments/assets/5ce753bf-a99f-4dfd-b580-ccb56adb21e3)![image](https://github.com/user-attachments/assets/5bfed608-d01b-4b77-b8ea-216fdaeeb101)![image](https://github.com/user-attachments/assets/e0dfe430-928d-4830-8ec2-3076ac7ef2bd)# EVT_labs Лойко Алеся Игоревна, 210901, https://ebaboba537.github.io/EVT_labs/
 
 # CV: Лойко Алеся Игоревна
 
-| <img src="lab_10/foto.jpg" width="150"> | Лойко Алеся Игоревна <br>Frontend-разработчик <br><br>Телефон: +375 (29) 7779033 <br>Телеграм: @cheetaw427 <br>Почта: *alesia.loika@gmail.com* |
+| <img src="lab_10/foto.jpg" width="150"> | Лойко Алеся Игоревна <br>Frontend-разработчик <br><br>Телефон: +375 (29) 7779033 <br>Телеграм: @cheetaw427 <br>Почта: *alesia.loika@gmail.com* <br>Английский: B1 |
 |---|:----|
 
 ## О себе
+
+Сейчас являюсь студентом 3 курса БГУИР. Развиваюсь в области веб-разработки и UX/UI дизайна. Активно принимаю участие в различных мероприятиях: являюсь членом Студенческого совета, за время учебы написала 3 статьи для научно-технической конференции БГУИР, участвовала в качестве разработчика в команде на хакатоне и различных волонтерских проектах
 
 ## Навыки
 
 #### Hard skills:
 
-Языки программирования и разметки: HTML, CSS, Javascript, Java <br>
-Среды разработки: Visual Studio Code, Intellij Idea <br>
-Базы данных и связанные инструменты: MySQL, Hibernate <br>
-Дополнительные инструменты: Git, Figma
+Языки программирования и разметки: **HTML**, **CSS**, **Javascript**, **Java** <br>
+Среды разработки: **Visual Studio Code**, **Intellij Idea** <br>
+Базы данных и связанные инструменты: **MySQL**, **Hibernate** <br>
+Дополнительные инструменты: **Git**, **Figma**
 
 #### Soft skills:
 
