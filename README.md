@@ -2,7 +2,7 @@
 
 # CV: Лойко Алеся Игоревна
 
-| <img src="lab_10/foto.jpg" width="150"> | Лойко Алеся Игоревна <br>Frontend-разработчик <br><br>Телефон: +375 (29) 777 90 33 <br>Телеграм: @cheetaw427 <br>Почта: *alesia.loika@gmail.com* <br>Английский: B1 |
+| <img src="lab_10/foto.jpg" width="150"> | Лойко Алеся Игоревна <br>Frontend-разработчик <br><br>Телефон: +375 (29) 777 90 33 <br>Телеграм: @cheetaw427 <br>Почта: *alesia.loika@gmail.com* <br>Английский: B2 |
 |---|:----|
 
 ## О себе
