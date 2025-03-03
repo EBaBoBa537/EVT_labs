@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8a1defec-677d-41c3-9f50-8d2dd79efe7f)![image](https://github.com/user-attachments/assets/b07cc6b7-236c-4351-82be-788baabf66c5)![image](https://github.com/user-attachments/assets/3164937d-9d54-4817-a4b9-42abf6fe704b)![image](https://github.com/user-attachments/assets/455ba679-0292-46e0-a642-0270b0199aa2)![image](https://github.com/user-attachments/assets/436dbcde-69fe-4d07-994f-826e1963f227)# EVT_labs Лойко Алеся Игоревна, 210901, https://ebaboba537.github.io/EVT_labs/
+![image](https://github.com/user-attachments/assets/5ce753bf-a99f-4dfd-b580-ccb56adb21e3)![image](https://github.com/user-attachments/assets/5bfed608-d01b-4b77-b8ea-216fdaeeb101)![image](https://github.com/user-attachments/assets/e0dfe430-928d-4830-8ec2-3076ac7ef2bd)# EVT_labs Лойко Алеся Игоревна, 210901, https://ebaboba537.github.io/EVT_labs/
 
 # CV: Лойко Алеся Игоревна
 
@@ -11,12 +11,9 @@
 
 #### Hard skills:
 
-Языки программирования и разметки: HTML, CSS, Javascript, Java
-
-Среды разработки: Visual Studio Code, Intellij Idea
-
-Базы данных и связанные инструменты: MySQL, Hibernate
-
+Языки программирования и разметки: HTML, CSS, Javascript, Java <br>
+Среды разработки: Visual Studio Code, Intellij Idea <br>
+Базы данных и связанные инструменты: MySQL, Hibernate <br>
 Дополнительные инструменты: Git, Figma
 
 #### Soft skills:
@@ -39,4 +36,20 @@
 
 
 ## Образование
+
+**Учреждение образования:** <br>
+Белорусский государственный университет информатики и радиоэлектроники
+
+**Факультет:** <br>
+Факультет компьютерного проектирования
+
+**Специальность (специализация):** <br>
+Инженерно-психологическое обеспечение информационных технологий (инженер-системотехник)
+
+
+
+
+
+
+
 
