@@ -12,8 +12,11 @@
 #### Hard skills:
 
 Языки программирования и разметки: HTML, CSS, Javascript, Java
+
 Среды разработки: Visual Studio Code, Intellij Idea
+
 Базы данных и связанные инструменты: MySQL, Hibernate
+
 Дополнительные инструменты: Git, Figma
 
 #### Soft skills:
@@ -27,7 +30,6 @@
 
 Список моих проектов можно найти *[здесь](https://github.com/EBaBoBa537?tab=repositories)*.
 
-#### Проекты
 | Название | Описание | Технологии |
 |:---|:---|:---|
 | Информационная система расчета стипендии | Курсовой проект | Java, Spring, MySQL,  Hibernate, Freemarker, HTML, CSS, JavaScript |
