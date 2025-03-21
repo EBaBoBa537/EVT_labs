@@ -1,0 +1,25 @@
+blockquote.blockquote {
+    font-weight: bold;
+}
+
+article.article img {
+    display: block;
+    height: 20px;
+}
+
+article.article p {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none !important;
+    color: #ff0000 !important;
+
+    &:hover {
+        cursor: progress;
+    }
+}
+
+body .wrapper {
+    max-width: 500px;
+}

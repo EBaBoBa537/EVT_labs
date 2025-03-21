@@ -1,0 +1,156 @@
+body .wrapper {
+    max-width: 100% !important;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    width: calc(100% - 10px);
+    z-index: 1000;
+    background: #6afffa;
+    padding: 10px 0px 10px 0px; 
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    width: calc(100% - 10px);
+    z-index: 1000;
+    background: #6afffa;
+    padding: 10px 0px 10px 0px; 
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.main {
+    margin-top: 30px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    min-height: calc(100vh - 60px);
+}
+
+article.article p {
+    font-style: normal !important; 
+}
+
+.blockquote {
+    font-style: italic;
+}
+
+body {
+    text-align: center;
+}
+
+.word {
+    position: sticky;
+    top: 50px;
+    padding: 5px;
+    width: fit-content;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px;
+}
+
+
+.word.first { background-color: #ffc3c3; left: 10px; }
+.word.second { background-color: #d5ffd5; left: calc(10px + 67px + 4px); }
+.word.third { background-color: #c5c5ff; left: calc(10px + 67px + 4px + 23px + 4px); }
+.word.fourth { background-color: #ffffd1; left: calc(10px + 67px + 4px + 23px + 4px + 53px + 4px); }
+.word.fifth { background-color: #b4e6ff; left: calc(10px + 67px + 4px + 23px + 4px + 53px + 4px + 80px + 4px); }
+
+article h3 + img + p::first-letter {
+    font-size: 200%;
+    color: #d6336c;
+}
+
+/* Чередование картинок, с нечетным порядковым номером – слева, четным – справа */
+article:nth-of-type(odd) img {
+    float: left;
+    margin: 0px 15px 15px 0px;
+}
+
+article:nth-of-type(even) img {
+    float: right;
+    margin: 0px 0px 15px 15px;
+}
+
+article img {
+    height: 120px !important;
+}
+
+.footer a {
+    color: blue !important; 
+    cursor: default !important;
+    text-decoration: underline !important;
+    margin-left: 5px;
+}
+
+.footer a:hover {
+    cursor: default;
+}
+
+/* ------------------------------------- EXTRA ------------------------------------------- */
+
+#extra {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px 80px 20px;
+}
+
+.clock {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    background-image: url('clock.svg');
+    background-size: cover;
+}
+
+/* Общий стиль стрелок */
+.strelka {
+    position: absolute;
+    height: 2px;
+    width: 120px;
+    border-radius: 1px;
+    top: 50%;
+    transform-origin: 100%;
+}
+
+/* Часовая стрелка (полный оборот за 12 ч) */
+.hour-strelka {
+    height: 4px;
+    border-radius: 2px;
+    background: #1e1e1e;
+    animation: rotation 43200s linear infinite;
+}
+
+/* Минутная стрелка (полный оборот за 60 мин) */
+.minute-strelka {
+    background: #616161;
+    animation: rotation 3600s linear infinite;
+}
+
+/* Секундная стрелка (полный оборот за 60 сек) */
+.second-strelka {
+    background: #ff0000;
+    animation: rotation 60s linear infinite;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
