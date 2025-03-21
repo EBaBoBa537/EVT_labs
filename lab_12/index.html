@@ -5,8 +5,7 @@
 		<title>Tailwind Framework</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
-		<!-- Theme used for syntax highlighted code -->
-		<!-- <link rel="stylesheet" href="plugin/highlight/monokai.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
 		<link rel="stylesheet" href="custom.css">
 	</head>
 	<body>
@@ -83,7 +82,7 @@
 				<section data-transition="slide">
 					<p style="font-size: 75px;">Get Tailwind #4</p>
 					<p style="margin-top: 20px;">Start using Tailwind in your HTML</p>
-					<pre style="margin-top: 30px; margin-bottom: 50px;" data-id="code-animation"><code class="hljs html" data-trim data-line-numbers><script type="text/template">
+					<pre style="margin-top: 30px; margin-bottom: 50px;" data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers><script type="text/template">
 						<!doctype html>
 						<html>
 						<head>
@@ -208,23 +207,10 @@
 
 			</div>
 		</div>
-<!-- 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script> -->
-
+		
 		<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+		<!-- highlight.js скрипт для подсветки синтаксиса -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 		<script>
 		Reveal.initialize({
 			controls: true,
@@ -232,6 +218,11 @@
 			slideNumber: true,
 			transition: 'slide'
 		});
+		// Инициализация подсветки кода
+		hljs.highlightAll();
 		</script>
+
+
+
 	</body>
 </html>
