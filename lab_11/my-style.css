@@ -134,23 +134,41 @@ article img {
     height: 4px;
     border-radius: 2px;
     background: #1e1e1e;
-    animation: rotation 43200s linear infinite;
+    animation: rotation-hour 43200s linear infinite;
 }
 
 /* Минутная стрелка (полный оборот за 60 мин) */
 .minute-strelka {
     background: #616161;
-    animation: rotation 3600s linear infinite;
+    animation: rotation-min 3600s linear infinite;
 }
 
 /* Секундная стрелка (полный оборот за 60 сек) */
 .second-strelka {
     background: #ff0000;
-    animation: rotation 60s linear infinite;
+    animation: rotation-sec 60s linear infinite;
 }
 
-@keyframes rotation {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+:root {
+    --var-time-hour: 0deg;
+    --var-time-hour-2: 0deg;
+    --var-time-min: 0deg;
+    --var-time-min-2: 0deg;
+    --var-time-sec: 0deg;
+    --var-time-sec-2: 0deg;
 }
 
+@keyframes rotation-min {
+    from { transform: rotate(var(--var-time-min)); }
+    to { transform: rotate(var(--var-time-min-2)); }
+}
+
+@keyframes rotation-sec {
+    from { transform: rotate(var(--var-time-sec)); }
+    to { transform: rotate(var(--var-time-sec-2)); }
+}
+
+@keyframes rotation-hour {
+    from { transform: rotate(var(--var-time-hour)); }
+    to { transform: rotate(var(--var-time-hour-2)); }
+}
