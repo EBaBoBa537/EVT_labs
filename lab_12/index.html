@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Tailwind Framework</title>
+		<meta name="description" content="Tailwind - «utility-first» CSS-фреймворк, который позволяет быстро создавать кастомизированные пользовательские интерфейсы">
+		<meta name="author" content="Алеся Лойко">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-transition="slide">
+					<div style="display: flex; align-items: center;">
+						<a href="https://tailwindcss.com/">
+							<img src="images\tailwind_logo.png" alt="tailwind logo" style="height: 270px;">
+						</a>
+						<div style="text-align: right;">
+							<p style="font-size: 85px; margin: 0px;">Tailwind CSS</p>
+							<p style="font-size: 80px; margin: 0px; background-image: linear-gradient(90deg, #268BAD, #4DABB5, #65D5B3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Presentation</p>							
+						</div>
+					</div>
+					<aside class="notes">
+						<p>Презентация на тему веб-фреймворка Tailwind, подготовленная для лабораторной №12 по ЭВТ</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 80px; display: flex; align-items: center; justify-content: center;"><img src="images/tailwind_logo_2.png" style="height: 80px; margin-right: 20px;"><span>tailwindcss</span></p>
+					<p style="margin-bottom: 100px; margin-top: 40px; font-size: 55px;">This is an «utility-first» CSS-framework</p>
+					<aside class="notes">
+						<p>Tailwind CSS — это утилитарный CSS-фреймворк с открытым исходным кодом, созданный для ускорения и упрощения процесса разработки пользовательских интерфейсов</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 70px;">«Utility-first» philosophy</p>
+					<blockquote style="font-size: 35px; margin-top: 30px;" cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;Tailwind перевернул традиционное представление о CSS, предлагая не набор заранее стилизованных компонентов, а инструментарий для построения любого дизайна с нуля&rdquo;
+					</blockquote>
+					<aside class="notes">
+						<p>Tailwind перевернул традиционное представление о CSS, предлагая не набор заранее стилизованных компонентов, а инструментарий для построения любого дизайна с нуля. За несколько лет фреймворк получил широкую популярность в сообществе разработчиков</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 75px;">Get Tailwind #1</p>
+					<p style="margin-top: 20px;">Install Tailwind CSS</p>
+					<pre style="margin-top: 30px; margin-bottom: 50px;" data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						npm install tailwindcss @tailwindcss/cli
+					</code></pre>
+					<aside class="notes">
+						<p>Самый простой способ начать работу с Tailwind - это установить его через Tailwind CLI (Node.js). Для этого пишем команду npm install tailwindcss @tailwindcss/cli</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 75px;">Get Tailwind #2</p>
+					<p style="margin-top: 20px;">Import Tailwind in your CSS</p>
+					<pre style="margin-top: 30px; margin-bottom: 50px;" data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers><script type="text/template">
+						@import "tailwindcss";
+					</script></code></pre>
+					<aside class="notes">
+						<p>Затем подключаем Tailwind в CSS файле с помощью @import "tailwindcss";</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 75px;">Get Tailwind #3</p>
+					<p style="margin-top: 20px;">Start the Tailwind CLI build process</p>
+					<pre style="margin-top: 30px; margin-bottom: 50px;" data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+					</code></pre>
+					<aside class="notes">
+						<p>Затем нужно подключить Tailwind через npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 75px;">Get Tailwind #4</p>
+					<p style="margin-top: 20px;">Start using Tailwind in your HTML</p>
+					<pre style="margin-top: 30px; margin-bottom: 50px;" data-id="code-animation"><code class="hljs html" data-trim data-line-numbers><script type="text/template">
+						<!doctype html>
+						<html>
+						<head>
+							<meta charset="UTF-8">
+						<link href="./output.css" rel="stylesheet">
+						</head>
+						<body>
+							<h1 class="text-3xl font-bold underline">
+								Hello world!
+							</h1>
+						</body>
+						</html>
+					</script></code></pre>
+					<aside class="notes">
+						<p>И готово! Tailwind можно использовать в вашем проекте</p>
+					</aside>
+				</section>
+
+				<section>
+					<section data-transition="slide">
+						<p style="font-size: 75px;">Code examples</p>
+						<pre data-id="code-animation"><code class="hljs html" data-trim data-line-numbers><script type="text/template">
+							<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+								Button
+							</button>
+						</script></code></pre>
+						<aside class="notes">
+							<p>Tailwind использует короткие имена классов, обозначающие конкретные CSS-свойства. Вот пример создания кнопки с использованием Tailwind-свойств: здесь p-4 – устанавливает внутренний отступ, text-center – выравнивание текста по центру, bg-blue-500 – задаёт базовый синий фон, hover:bg-blue-700 – изменяет цвет фона при наведении, text-white – цвет текста белый, font-bold – жирное начертание шрифта, py-2 px-4 – вертикальные и горизонтальные отступы, rounded – скруглённые углы</p>
+						</aside>
+					</section>
+
+					<section data-transition="slide">
+						<p style="font-size: 75px;">Code examples</p>
+						<pre data-id="code-animation"><code class="hljs html" data-trim data-line-numbers><script type="text/template">
+							<div class="p-4 md:p-8 lg:p-12">
+								Content
+							</div>
+						</script></code></pre>
+						<aside class="notes">
+							<p>Есть также и продвинутые свойства. Вот пример создания блока, здесь отступы увеличиваются на устройствах с большими экранами</p>
+						</aside>
+					</section>
+
+					<section data-transition="slide">
+						<p style="font-size: 75px;">Code examples</p>
+						<pre data-id="code-animation"><code class="hljs html" data-trim data-line-numbers><script type="text/template">
+							<a class="text-gray-700 hover:text-gray-900 focus:text-blue-600">
+								Link
+							</a>
+						</script></code></pre>
+						<aside class="notes">
+							<p>И вот пример создания ссылки. Здесь используются классы для разных состояний (hover, focus и т.д.)</p>
+						</aside>
+					</section>					
+				</section>
+
+
+				<section data-transition="slide">
+					<p style="font-size: 75px;">Documentation</p>
+					<p style="margin-bottom: 80px;">See more in the official documentation <a href="https://tailwindcss.com/docs/installation/using-vite">&gt;&gt;&gt;</a></p>
+					<aside class="notes">
+						<p>Наиболее подробным образом классы Tailwind описаны в документации</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 70px;"><span style="color: #9DD18F">Strengths</span> and <span style="color: #F48484">weaknesses</span></p>
+					<div style="display: flex; justify-content: space-between; font-size: 28px; margin-bottom: 80px; margin-top: 30px;">
+						<ul>
+							<li class="fragment">Гибкость и модульность</li>
+							<li class="fragment">Ускорение разработки</li>
+							<li class="fragment">Режим Just-In-Time</li>
+							<li class="fragment">Лёгкая интеграция</li>
+						</ul>
+						<ul>
+							<li class="fragment">Крутая кривая обучения</li>
+							<li class="fragment">Раздутость HTML-разметки</li>
+							<li class="fragment">Отсутствие готовых компонентов</li>
+						</ul>						
+					</div>
+					<aside class="notes">
+						<p>Tailwind обладает разными преимуществами и недостатками. Преимущества: Гибкость и модульность - использование маленьких классов для создания уникальных дизайнов позволяет быстро изменять и настраивать стили без необходимости писать много кастомного CSS. Ускорение разработки - Благодаря заранее определённым утилитарным классам, можно быстро создавать и изменять компоненты интерфейса. Режим Just-In-Time (JIT) - С введением JIT Tailwind генерирует только те стили, которые используются в проекте, что позволяет значительно уменьшить размер итогового CSS-файла и улучшить производительность. Лёгкая интеграция - Tailwind можно использовать вместе с любыми JavaScript-фреймворками (React, Vue, Angular), а также в статических проектах. Недостатки: Крутая кривая обучения - Для разработчиков, привыкших к классическому подходу к CSS или компонентным библиотекам, использование утилитарных классов может сначала показаться непривычным. Раздутость HTML-разметки - Использование большого количества утилитарных классов непосредственно в HTML может привести к тому, что код будет выглядеть менее чистым и сложнее поддерживаться. Отсутствие готовых компонентов - В отличие от фреймворков типа Bootstrap, Tailwind не предоставляет готовых компонентов, таких как модальные окна или карусели</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 70px;"><span style="background-image: linear-gradient(90deg, #268BAD, #4DABB5, #65D5B3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Tailwind</span> vs <span style="color: #B15DFD;">Bootstrap</span></p>
+					<table>
+						<thead>
+							<tr>
+								<th>Tailwind</th>
+								<th>Bootstrap</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Утилитарный подход</td>
+								<td>Готовые компоненты</td>
+							</tr>
+							<tr>
+								<td>Высокая<br>гибкость</td>
+								<td>Ограниченная кастомизация</td>
+							</tr>
+							<tr>
+								<td>Благодаря JIT весит меньше</td>
+								<td>Больше стилей - весит больше</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+						<p>Можно сравнить Tailwind с его основным конкуретном среди фреймворков для веб-разработки - фреймворком Bootstrap. Tailwind CSS основан на утилитарном подходе, где каждая утилита отвечает за одно конкретное свойство стиля. Это позволяет создавать кастомные дизайны, комбинируя небольшие классы. Bootstrap предлагает готовые компоненты и классы для создания стандартного интерфейса. Подход "компонент-ориентированный" позволяет быстро собрать прототип, но может ограничивать гибкость дизайна. Итоговый выбор фреймворка зависит от конкретных потребностей проекта</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide">
+					<p style="font-size: 70px;">Thanks for the attention!</p>
+					<img src="images/wordcloud.png">
+					<aside class="notes">
+						<p>Таким образом, Tailwind является хорошим фреймворком для упрощения и ускорения веб-разработки. Спасибо за внимание!</p>
+					</aside>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
