@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(':root').style.setProperty('--var-time-sec', (seconds * 6 + 90) + 'deg');
     document.querySelector(':root').style.setProperty('--var-time-sec-2', (450 + seconds * 6) + 'deg');
     document.querySelector(':root').style.setProperty('--var-time-min', (minutes * 6 + 90) + 'deg');
-    document.querySelector(':root').style.setProperty('--var-time-min-2', (450 + minutes) + 'deg');
+    document.querySelector(':root').style.setProperty('--var-time-min-2', (450 + minutes * 6) + 'deg');
     document.querySelector(':root').style.setProperty('--var-time-hour', ((hours % 12) * 30 + 90) + 'deg');
     document.querySelector(':root').style.setProperty('--var-time-hour-2', ((450 + (hours % 12) * 30)) + 'deg');
 });
