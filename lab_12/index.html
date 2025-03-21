@@ -2,13 +2,15 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
 		<title>Tailwind Framework</title>
-		<meta name="description" content="Tailwind - «utility-first» CSS-фреймворк, который позволяет быстро создавать кастомизированные пользовательские интерфейсы">
+		<!-- <meta name="description" content="Tailwind - «utility-first» CSS-фреймворк, который позволяет быстро создавать кастомизированные пользовательские интерфейсы">
 		<meta name="author" content="Алеся Лойко">
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/black.css"> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 		<link rel="stylesheet" href="css/custom.css">
@@ -212,7 +214,7 @@
 
 			</div>
 		</div>
-
+<!-- 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
@@ -226,6 +228,16 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+		</script> -->
+
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+		<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			slideNumber: true,
+			transition: 'slide'
+		});
 		</script>
 	</body>
 </html>
